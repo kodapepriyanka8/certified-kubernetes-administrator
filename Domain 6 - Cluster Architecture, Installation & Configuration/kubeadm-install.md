@@ -64,9 +64,9 @@ sudo apt-mark hold kubelet kubeadm kubectl
 sudo apt-get update
 ```
 
-#### Step 4: Initialize Cluster with kubeadm (Only master node)
+#### Step 4: Initialize Cluster with kubeadm (Only master node.)
 ```sh
-kubeadm init --pod-network-cidr=10.244.0.0/16 --kubernetes-version=1.24.0
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --kubernetes-version=1.24.0
 ```
 ```sh
 mkdir -p $HOME/.kube
